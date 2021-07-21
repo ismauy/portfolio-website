@@ -163,14 +163,14 @@ a:active {
 }
 
 
-button, .button {
+button, .button-home-page {
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--button1);
-  color: var(--font-button-color);
+  color: var(--font-button-color) !important;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -182,7 +182,7 @@ button, .button {
   /* it is also possible to include all the properties in the same lina, i.e. "transition: 0.2s opacity;" */
 }
 
-button:hover, button:focus, .button:hover, button:focus {
+button:hover, button:focus, .button-home-page:hover, button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
@@ -190,8 +190,15 @@ button:hover, button:focus, .button:hover, button:focus {
 }
 
 .button__secondary {
+  border: none;
+  font-family: inherit;
   background-color: var(--button2);
-  color: var(--font-button-color);
+  color: var(--font-button-color) !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #03474c;
+  transition: 0.4s background-color, 0.4s
 }
 
 .button-about-me {
@@ -228,6 +235,11 @@ button:hover, button:focus, .button:hover, button:focus {
     margin: 20px;
   }
 */
+
+.work-content {
+  text-align: center;
+
+}
 
 .grid-work {
   display: grid;

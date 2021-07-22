@@ -395,18 +395,6 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
     align-self: center;
   }
 
-  .contact-me {
-      display: flex;
-      flex-direction: column;
-    }
-
-  .contact-form {
-    display: grid;
-    position: relative;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
   .about-me {
     padding-top: 85px;
     padding-bottom: 85px;

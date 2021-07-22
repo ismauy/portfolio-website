@@ -139,9 +139,16 @@ p {
 
 
 .contact-me {
-  width: 50%;
-  padding: 20px;
-  margin: 5% auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: grid;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Hyperlink style
@@ -213,6 +220,18 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   transition: 0.4s background-color, 0.4s
 }
 
+.button-contact-me {
+  border: none;
+  font-family: inherit;
+  background-color: var(--button1);
+  color: var(--font-button-color) !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #03474c;
+  transition: 0.4s background-color, 0.4s
+}
+
 .button-cv:hover {
   background-color: var(--button-cv-hover);
 }
@@ -227,7 +246,7 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
 
 /* Grid */
 
-/* start grid fallback 
+/* start grid fallback
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -325,12 +344,12 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   bottom: 0;
 }
 
-/* shared code start */ 
+/* shared code start */
 @media all and (max-width: 1450px) {
   .grid-work {
     grid-gap: 10px;
   }
- 
+
   h1 {
     font-size: 22px;
   }
@@ -377,8 +396,15 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   }
 
   .contact-me {
-    padding-bottom: 120px;
-    float: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+  .contact-form {
+    display: grid;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .about-me {
@@ -393,7 +419,7 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   .grid-work {
     grid-template-columns: 1fr 1fr;
   }
- 
+
   .profile {
     float: none;
     padding-top: 90px;
@@ -423,7 +449,7 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   .grid-work {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .profile {
     float: none;
     padding-top: 90px;

@@ -319,7 +319,7 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
 }
 
 .grid-work__item {
-  background-color: var(--background2);
+  background-color: var(--background);
   padding:20px 10px;
   text-align: center;
 }

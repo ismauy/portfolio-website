@@ -2,7 +2,8 @@
   --background: #D3D3D3;
   --background2: #fdfdfd;
   --background3: #2b2b2b;
-  --link-font-color: #FFFF9A;
+  --link-font-color: #8ddff3;
+  --font-color: #f2fa87;
   --button1: #357b70;
   --button2: #e0b354;
   --button-cv-hover: #BCB1FD;
@@ -19,6 +20,8 @@
 /* Header */
 
 .page-header {
+  font-family: 'Ubuntu', sans-serif;
+  font: bolder;
   display: flex;
   width: 100%;
   background-color: var(--background3);
@@ -74,8 +77,8 @@ html, body,
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: var(--background);
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--background2);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   line-height: 1.6;
@@ -258,7 +261,11 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
 
 .work-content {
   text-align: center;
+}
 
+.work-content-item {
+  text-align: center;
+  padding: 5%;
 }
 
 .grid-work {

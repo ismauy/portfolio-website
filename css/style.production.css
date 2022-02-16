@@ -27,6 +27,7 @@
 /* Header */
 
 .page-header {
+  font-family: 'Ubuntu', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

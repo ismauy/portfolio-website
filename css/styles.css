@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 /* Header */
 
 .page-header-index {
@@ -45,6 +49,14 @@
   position: fixed;
   left: 0;
   top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--link-font-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--link-font-color2);
 }
 
 .page-header__item {
@@ -86,11 +98,12 @@
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
-html, body,
-
+.navigation-list ul {
+  margin-left: 0px;
+}
 
 .page {
   height: 100%;
@@ -104,11 +117,16 @@ body {
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   line-height: 1.6;
-}
-
-body {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.body-index {
+  background-image: url('../img/bg-main-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 h1 {
@@ -311,8 +329,13 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   text-align: right;
 }
 
-.work-each-img {
-  background-size: cover;
+.work-each-img img {
+  width: 100%;
+  }
+
+  .bgMyFlixReact {
+    background-image: url(../img/work/myFlixReact.png);
+    background-size: cover;
   }
   
 /* Footer */
@@ -333,6 +356,10 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
 /* shared code start */
 @media all and (max-width: 1450px) {
   .grid-work {
+    grid-gap: 10px;
+  }
+  
+  .grid-work-each {
     grid-gap: 10px;
   }
 
@@ -358,6 +385,13 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
     margin: 10px;
     padding-bottom: 120px;
   }
+
+  .grid-work-each {
+    grid-template-columns: 1fr;
+    margin: 10px;
+    padding-bottom: 120px;
+  }
+
   .profile__text {
     clear: both;
   }
@@ -394,6 +428,10 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
     grid-template-columns: 1fr 1fr;
   }
 
+  .grid-work-each {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .profile {
     float: none;
     padding-top: 90px;
@@ -421,6 +459,10 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
 /* Tablets PRO */
 @media all and (min-width: 500px) and (max-width: 1025px) {
   .grid-work {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-work-each {
     grid-template-columns: 1fr 1fr;
   }
 

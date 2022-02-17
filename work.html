@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <style>
+  <!-- 
+    <style>
     body {
       background-image: url('img/bg-pages.png');
       background-repeat: no-repeat;
@@ -10,6 +11,7 @@
       background-position: center;
     }
   </style>
+-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
@@ -24,10 +26,11 @@
 
 <body>
   <header class="page-header">
-    <nav>
+    <nav style="text-align: center;">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <font color="white">ismauy </font>
+          <a href="index.html" role="menuitem" class="navigation-list__item--active">
+            &lt; / &gt;
         </li>
         <li role="presentation">
           <a href="about.html" role="menuitem" class="navigation-list__item--active">about me</a>
@@ -44,11 +47,13 @@
 
   <!-- Main content -->
   <main>
+    <p>
+
+    </p>
     <section>
-      <h1>Work</h1>
       <div class="grid-work">
         <div class="grid-work__item">
-          <h1>Pokédex</h1>
+          <h1>Pokedex</h1>
           <h4>HTML, CSS and JavaScript App</h4>
           <a href="pokedex.html">See more</a>
         </div>
@@ -59,7 +64,7 @@
           <a href="to-do-list.html">See more</a>
         </div>
         <div class="grid-work__item">
-          <h1>myFlix Client</h1>
+          <h1>myFlix Client (React)</h1>
           <h4>Mobile web app</h4>
 
           <a href="myFlix-front.html">See more</a>
@@ -74,6 +79,16 @@
           <h1>Meet App</h1>
           <h4>Serverless, progressive web application (PWA)</h4>
           <a href="meet-app.html">See more</a>
+        </div>
+        <div class="grid-work__item">
+          <h1>blablachat</h1>
+          <h4>Serverless, progressive web application (PWA)</h4>
+          <a href="blablachat.html">See more</a>
+        </div>
+        <div class="grid-work__item">
+          <h1>myFlix Client (Angular)</h1>
+          <h4>Mobile web app</h4>
+          <a href="myFlix-angular.html">See more</a>
         </div>
       </div>
     </section>

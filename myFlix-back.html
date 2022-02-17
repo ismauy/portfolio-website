@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+  <style>
+    body {
+      background-image: url('img/bg-pages.png');
+      background-repeat: no-repeat;
+      background-size: 200px;
+      background-position: center;
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
@@ -15,41 +23,44 @@
 </head>
 
 <body>
-  <!-- Header including the logo and the main navigation -->
   <header class="page-header">
-    <!-- Add Logo here -->
-    <h1>i s m a u y</h1>
-    <nav class="main-navigation page-header__item">
+    <nav style="text-align: center;">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item linka">Home</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item--active">
+            &lt; / &gt;
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+          <a href="about.html" role="menuitem" class="navigation-list__item--active">about me</a>
         </li>
         <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+          <a href="work.html" role="menuitem" class="navigation-list__item--active">my work</a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item--active">contact</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="work-content-item">
-      <h1>myFlix API (server side)</h1>
-      <p><b>My Rol</b>
-        Within this project, I was responsible for the backend web app development.
-        Additionally, I've been responsible for the data base.
-      </p>
-      <p></p>A server-side component of a “movies” web application. The web application provides users with access to
-      information about different movies, directors, and genres. Users are able to sign up, update their personal
-      information, and create a list of their favorite movies. Built with MongoDB and hosted on Heroku.
-      </p>
-      <a href="https://github.com/ismauy/movie_api" target="_blank">See project on GitHub</a>
-      <br>
-      <a href="work.html">back</a>
+    <div class="grid-work-each">
+      <div class="work-each-img">
+        <img src="img/work/movie-api.png">
+      </div>
+      <div class="work-each-txt">
+        <p>
+        <h1>myFlix API (server side)</h1>
+        </p>
+        <p>A server-side component of a “movies” web application. The web application provides users with access to
+          information about different movies, directors, and genres. Users are able to sign up, update their personal
+          information, and create a list of their favorite movies. Built with MongoDB and hosted on Heroku.</p>
+      </div>
+      <div class="work-each-txt">
+        <a href="https://github.com/ismauy/movie_api" target="_blank">GitHub</a>
+      </div>
+      <div class="work-each-txt-right">
+        <a href="work.html">Back</a>
+      </div>
     </div>
   </main>
 

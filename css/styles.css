@@ -301,7 +301,7 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
 }
 
 .grid-work {
-  width: 60%;
+  width: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 40px;
@@ -339,10 +339,14 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   width: 100%;
   }
 
-  .bgMyFlixReact {
-    background-image: url(../img/work/myFlixReact.png);
-    background-size: cover;
-  }
+.bgMyFlixReact {
+  background-image: url(../img/work/myFlixReact.png);
+  background-size: cover;
+}
+  
+.fondo-gris {
+  background-color: rgb(136, 59, 59);
+}
   
 /* Footer */
 

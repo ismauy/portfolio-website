@@ -193,6 +193,7 @@ p {
   display: flex;
   text-align: center;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .contact-form {
@@ -201,6 +202,10 @@ p {
   justify-content: center;
   max-width: 700px;
   margin: 0 auto;
+}
+
+.contact-link {
+  text-decoration: none;
 }
 
 /* Hyperlink style
@@ -318,6 +323,45 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   padding-top: 30px;
   margin: 20px;
 }
+.grid-work__pokedex {
+  background-image: url(../img/work/pokedex-card.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.grid-work__mFreact {
+  background-image: url(../img/work/flixReact-card.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.grid-work__mFangular {
+  background-image: url(../img/work/flixAngular-card.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.grid-work__to-do {
+  background-image: url(../img/work/to-do-card.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.grid-work__bla {
+  background-image: url(../img/work/bla-card.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  margin: 20px;
+}
 
 .work-each-txt {
   padding:20px 10px;
@@ -344,10 +388,10 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   background-size: cover;
 }
   
-.fondo-gris {
-  background-color: rgb(136, 59, 59);
+.link-align-right {
+  text-align: end;
 }
-  
+
 /* Footer */
 
 .page-footer {

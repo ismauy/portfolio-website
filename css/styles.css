@@ -202,6 +202,11 @@ p {
     text-align: center;
   }
 
+  .my-contact2 {
+    justify-content: center;
+    text-align: center;
+  }
+
 .contact-form {
   display: grid;
   position: relative;

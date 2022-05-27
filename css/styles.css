@@ -6,13 +6,14 @@
   --link-font-color2: white;
   --link-font-color3: #5e81ac;
   --font-color: white;
-  --font-color2: #2e3440;
-  --button1: #357b70;
-  --button2: #e0b354;
-  --button-cv-hover: #BCB1FD;
+  --font-color2: #88c0d0;
+  --button1: #2e3440;
+  --button2: #88c0d0;
   --font-button-color: #FFFFFF;
   --font-size: 16px;
   --font-weight: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 }
 
 * {
@@ -43,12 +44,12 @@ ul {
   font-family: 'Ubuntu', sans-serif;
   color: var(--font-color);
   display: flex;
-  width: 100%;
   background-color: var(--background3); 
   padding: 20px;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -117,41 +118,35 @@ body {
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   line-height: 1.6;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.body-index {
-  background-image: url('../img/bg-main-1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  padding-top: 98px;
 }
 
 h1 {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 150px;
+  font-weight: bold;
   color: var(--font-color2);
+  /* color:#88c0d0;font-weight:bold;font-size: 150px */
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--font-color2);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--font-color2);
+  font-size: 35px;
+  font-weight: bold;
 }
 
 h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--font-color2);
+  font-size: 22px;
+  font-weight: bold;
 }
+
+h5 {
+  font-size: 18px;
+}
+
 
 a {
   color: var(--link-font-color);
@@ -161,6 +156,19 @@ p {
   margin-bottom: 1em;
 }
 
+.section {
+  padding-top: 8%;
+  gap: 1.5rem;
+  margin-bottom: 10%;
+}
+
+.section__size {
+  display: flex;
+  gap: 1.5rem;
+  min-height: calc(100vh - 98px);
+  align-items: center;
+}
+
 .profile__portrait {
   float: left;
   width: 250px;
@@ -168,9 +176,18 @@ p {
   border-radius: 50%;
 }
 
+.profile__portrait__1 {
+  float: right;
+  width: 100px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
 .profile {
+  display: flex;
   max-width: 700px;
   margin: 0 auto;
+  gap: 4rem;
 }
 
 .profile__text {
@@ -179,20 +196,29 @@ p {
 }
 
 .about-me {
-  margin: auto 20px;
-  text-align: center;
-  padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 5rem;
+    gap: 5%;
 }
 
-.about-me__table {
-  margin: 0 auto;
+.about-me img {
+  width: 35%;
+  border-radius: 50%;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
+.about-me-img {
+  align-items: center;
+}
 
 .contact-me {
     margin-top: 0;
     padding-top: 50px;
-    width: 100vw;
+    width: 5vw;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -208,16 +234,66 @@ p {
   }
 
 .contact-form {
-  display: grid;
-  position: relative;
   justify-content: center;
-  max-width: 700px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
 .contact-link {
   text-decoration: none;
 }
+
+
+/* tech area  */
+
+.skills-tools {
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  max-width: 1000px;
+  margin-left: 22%;
+  margin-right: 12%;
+  margin-bottom: 10%;
+}
+
+.container-icons {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.icon-container {
+  height: 100px;
+  width: 16.5%;
+}
+
+.container-icons i {
+  font-size: 3rem;
+}
+
+.container-icons img {
+  height: 3rem;
+}
+
+img.icon {
+  height: 16px;
+}
+
+.tech-section {
+  margin-top: 25%;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+}
+
+.tech-vertical {
+  writing-mode: vertical-rl; 
+}
+
+/* tech area end */
 
 /* Hyperlink style
  */
@@ -235,31 +311,27 @@ a:active {
 }
 
 
-button, .button-home-page {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--link-font-color);
-  color: var(--font-color2) !important;
+/* button */
+
+.button{
+  display: inline-block;
+  border: 1px solid var(--button2);
+  color: var(--button2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  -webkit-transition: .6s;
+  transition: .6s;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.9s;
-  transition-property: opacity;
-  /* it is also possible to include all the properties in the same lina, i.e. "transition: 0.2s opacity;" */
 }
 
-button:hover, button:focus, .button-home-page:hover, button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
+.button:hover {
+  border: 1px solid var(--button1);
+  background-color: var(--button2);
+  color: #fff;
 }
+
+/* end button */
 
 .container {
   font-family: 'Lato', sans-serif;
@@ -267,103 +339,69 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   padding: 30px;
 }
 
-.work-content {
-  text-align: center;
+.project-grid {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10%;
 }
 
-.work-content-item {
-  text-align: center;
-  padding: 5%;
-}
-
-.grid-work {
+.project-grid-right {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  grid-template-columns: 4fr 8fr;
+  gap: 4rem;
 }
 
-.grid-work-each {
+.project-grid-right-meet {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0px 40px;
+  grid-template-columns: 3fr 9fr;
+  gap: 4rem;
 }
 
-.grid-work__item {
-  text-align: center;
-  padding-top: 30px;
-  margin: 20px;
-}
-.grid-work__pokedex {
-  background-image: url(../img/work/pokedex-card.png);
-  background-size: cover;
-  text-align: center;
-  padding-top: 30px;
-  margin: 20px;
+.project-grid-left {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 4rem;
 }
 
-.grid-work__mFreact {
-  background-image: url(../img/work/flixReact-card.png);
-  background-size: cover;
-  text-align: center;
-  padding-top: 30px;
-  margin: 20px;
+.works__container {
+  gap: 1rem;
+  margin-bottom: 5rem;
 }
 
-.grid-work__mFangular {
-  background-image: url(../img/work/angular-card.png);
-  background-size: cover;
-  text-align: center;
-  padding-top: 30px;
-  margin: 20px;
-}
-
-.grid-work__to-do {
-  background-image: url(../img/work/to-do-card.png);
-  background-size: cover;
-  text-align: center;
-  padding-top: 30px;
-  margin: 20px;
-}
-
-.grid-work__bla {
-  background-image: url(../img/work/bla-card.png);
-  background-size: cover;
-  text-align: center;
-  padding-top: 30px;
-  margin: 20px;
-}
-
-.work-each-txt {
-  padding:20px 10px;
-  text-align: center;
-}
-
-.work-each-txt-right {
-  padding:20px 10px;
-  text-align: right;
-}
-
-.work-each-tag {
-  font: 12px/1.5 'PT Sans', serif;
-  margin: 25px;
-  text-align: center;
-}
-
-.work-each-img img {
-  width: 100%;
-  }
-
-.bgMyFlixReact {
-  background-image: url(../img/work/myFlixReact.png);
-  background-size: cover;
+.project-card {
+  max-width: 75%; 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2%;
+  margin: 0 auto;
 }
   
 .link-align-right {
   text-align: end;
 }
+
+/* scrollup */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #88c0d0;
+  color: #2e3440;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#myBtn:hover {
+  background-color: #D3D3D3;
+}
+
+
 
 /* Footer */
 
@@ -372,12 +410,13 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   display: inline-block;
   text-align: center;
   font-size: var(--font-size);
-  /* background-color: var(--background); */
+  background-color: var(--background2);
   padding-bottom: 20px;
-  width: 100%;
+  width: 4%;
   position: fixed;
   left: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .tags {
@@ -447,12 +486,7 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
     grid-gap: 10px;
   }
 
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 18px;
-  }
+
   .project-link {
     display: inline-block;
   }
@@ -499,11 +533,6 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
     align-self: center;
   }
 
-  .about-me {
-    padding-top: 85px;
-    padding-bottom: 85px;
-  }
-
 }
 
 /* Tablets */
@@ -535,8 +564,8 @@ button:hover, button:focus, .button-home-page:hover, button:focus {
   }
 
   .contact-me {
-    padding-bottom: 120px;
-    float: none;
+   margin-left: 10%;
+   margin-right: 10%;
   }
 }
 

@@ -13,11 +13,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 
-<body class="body-index">
-  <header class="page-header-index">
+<body>
+  <!-- scroll up -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> <span style="font-weight:bold">^</span> </button>
+
+  <!-- header  -->
+  <header class="page-header">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,17 +33,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active">
-                ismauy</a>
+              <a class="nav-link active" href="#home"><span style="font-weight:bold">&nbsp;&nbsp; #.
+                  &nbsp;&nbsp;</span></a>
+              <!-- <a class="nav-link" href="index.html"><span style="font-weight:bold">&nbsp;&nbsp; &lt; / &gt;
+                  &nbsp;&nbsp;</span></a> -->
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="about.html">about me</a>
+              <a class="nav-link" href="#about"><span style="font-weight:bold">&nbsp;&nbsp;about.&nbsp;&nbsp;</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="work.html">my work</a>
+              <a class="nav-link" href="#work"><span
+                  style="font-weight:bold">&nbsp;&nbsp;projects.&nbsp;&nbsp;</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">contact me</a>
+              <a class="nav-link" href="#contact"><span
+                  style="font-weight:bold">&nbsp;&nbsp;contact.&nbsp;&nbsp;</span></a>
             </li>
           </ul>
         </div>
@@ -47,11 +57,456 @@
 
   <main>
 
+    <section class="section__size" id="home">
+      <div class="profile">
+        <div>
+          <h1>if<span style="color:#2e3440;font-weight:bold;font-size: 75px;">.</h1></span>
+        </div>
+        <div>
+          <h3>alert( 'Hello, world!' );</h3>
+          <br><br>
+          <h5>
+            <p>Here
+              <span style="font-weight:bold;font-size: 21px;">Ismael Ferrazzi</span>
+              <br>
+              A Full Stack Web Developer Student based in Berlin
+              <br>
+              Welcome to my In-Progress Portfolio
+
+          </h5>
+          </p>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="section__size" id="about">
+
+      <div class="about-me">
+        <div>
+          <div style="text-align: start;margin-right: 15%;margin-bottom: 5%;">
+            <span style="color:#2e3440;font-weight:bold;font-size: 50px;">about</span><span
+              style="color:#88c0d0;font-weight:bold;font-size: 50px;">.</span>
+          </div>
+          <p>I am a recently Full Stack Web Developer based in Berlin with ability to learn and colaborate in rapidily
+            changing environments and compositions.</p>
+          <p> Worked through 900+ hours of bootcamp structure, learning JavaScript, React, MongoDB, and NodeJS among
+            others.</p>
+          <p>Seeking an entry level position that will allow me to support and add value to an amazing product as well
+            as hone my skills as a developer.</p>
+          <p>Open to in office or remote roles.</p>
+          <br>
+          <p style="text-align: center;"><a href="img/cv-ismauy.pdf" class="button about__cv" target="_blank">View my
+              CV</a></p>
+
+        </div>
+        <div>
+          <div class="about-me-img">
+            <img src="img/isma-portrait.jpg" alt="Ismael Ferrazzi Portrait">
+          </div>
+          <div>
+            <p><b>My Technical skills include:</b></p>
+            <ul>
+              <li>HTML, CSS and SCSS</li>
+              <li>JavaScript and TypeScript</li>
+              <li>SQL and NoSQL</li>
+              <li>Libraries and Frameworks ( i.e. jQuery, Bootstrap, React.js, React Native, Angular)</li>
+              <li>Responsive web and application design</li>
+              <li>APIs</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div>
+        <div style="text-align: end;margin-right: 15%;margin-bottom: 3%;">
+          <span style="color:#88c0d0;">
+            <h2>projects
+          </span><span style="color:#2e3440;font-weight:bold;font-size: 50px;">.</h2></span>
+        </div>
+        <div class="project-card">
+          <!-- my flyx client side -->
+          <div class="card mb-3 ">
+            <div class=" row g-0">
+              <div class="col-md-5">
+                <img src="img/work/myFlixReact1.png" class="img-fluid " alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">myFlix (client side)
+                    <a href="https://ismauy-myflix.netlify.app/" target="_blank"><img src="img/svg/www.svg" alt="live"
+                        style="margin-left: 10%;"></a>
+                    <a href="https://github.com/ismauy/myFlix-client" target="_blank"><img src="img/svg/git-repo.svg"
+                        alt="GitHub Ismael ferrazzi" style="margin-left: 2%;"></a>
+                  </h4>
+                  <p class="card-text">
+                  <p>After creating the MyFlixDB REST API to store data about movies and users, this App moves from the
+                    backend
+                    server-side to the client-facing frontend.
+                    <br>The myFlix app allowed users to make requests to a MongoDB database.
+                    <br>MyFlixClient is the client-side of that app and its purpose is to create an interface that users
+                    can
+                    interact with
+                    while using the movie app.
+                    <br>Responses from the server will be rendered into the interface: movie synopses, director
+                    biographies, genres, etc. MyFlixClient is built With Javascript, React, SCSS, & HTML
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- my flyx client side end -->
+
+          <!-- my flix api -->
+          <div class="card mb-3">
+            <div class="row g-0">
+
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">myFlix API (server side)
+                    <a href="https://github.com/ismauy/movie_api" target="_blank"><img src="img/svg/www.svg"
+                        alt="GitHub Ismael ferrazzi" style="margin-left: 10%;"></a>
+
+                  </h4>
+                  <p class="card-text">
+                  <p>A server-side component of a “movies” web application. The web application provides users with
+                    access
+                    to information about different movies, directors, and genres. Users are able to sign up, update
+                    their
+                    personal information, and create a list of their favorite movies. Built with MongoDB and hosted on
+                    Heroku.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="img/work/movie-api.png" class="img-fluid " alt="...">
+
+              </div>
+            </div>
+          </div>
+          <!-- my flix api end-->
+
+          <!-- meet app  -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/work/meet1.png" class="img-fluid " alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">Meet App
+                    <a href="https://ismauy.github.io/meet/" target="_blank"><img src="img/svg/www.svg" alt="live"
+                        style="margin-left: 10%;"></a>
+                    <a href="https://github.com/ismauy/meet" target="_blank"><img src="img/svg/git-repo.svg"
+                        alt="GitHub Ismael ferrazzi" style="margin-left: 2%;"></a>
+                  </h4>
+                  <p class="card-text">
+                  <p>A serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+                    technique.
+                    It uses the Google Calendar API to fetch upcoming events.</p>
+                  <p> A React application.
+                    Built using the TDD technique.
+                    Uses the Google Calendar API and OAuth2 authentication flow.
+                    Uses serverless functions (AWS lambda) for the authorization server instead of using a traditional
+                    server.
+                    Passes Lighthouse’s PWA checklist.
+                    Works offline or in slow network conditions with the help of a service worker.
+                    The API calls use React axios and async/await.
+                    Implements an alert system using an OOP approach to show information to the user.
+                    Makes use of data visualization (recharts preferred).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- meet app end -->
+
+          <!-- bla bla chat -->
+          <div class="card mb-3">
+            <div class="row g-0">
+
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">blablachat
+                    <a href="https://github.com/ismauy/blablachat" target="_blank"><img src="img/svg/git-repo.svg"
+                        alt="GitHub Ismael ferrazzi" style="margin-left: 10%;"></a>
+                  </h4>
+                  <p class="card-text">
+                  <p>BlaBlaChat is a chat app for mobile devices created using React Native. The app will provide users
+                    with
+                    a
+                    chat interface and options to share images (from the gallery and
+                    taken with the camera) and their location.
+                    <br>Users enter their name and select the color which will be used for rendering the start button,
+                    their
+                    messages bubble and the custom actions button.
+                    <br>Stores messages and displays when the user is off-line.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="img/work/bla.png" class="img-fluid " alt="...">
+
+              </div>
+            </div>
+          </div>
+          <!-- bla bla chat end -->
+
+          <!-- my flyx angular -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/work/myFlixAngular1.png" class="img-fluid " alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">myFlix Client (Angular)
+                    <a href="https://ismauy.github.io/myFlix-Angular-client/welcome" target="_blank"><img
+                        src="img/svg/www.svg" alt="live" style="margin-left: 10%;"></a>
+                    <a href="https://github.com/ismauy/myFlix-Angular-client" target="_blank"><img
+                        src="img/svg/git-repo.svg" alt="GitHub Ismael ferrazzi" style="margin-left: 2%;"></a>
+                  </h4>
+                  <p class="card-text">
+                  <p>It connects to backend server hosted on Heroku and features modified API and custom SCSS design.
+                    Users
+                    need
+                    to login or register in order to access the movie card list. There they can favorite or unfavorite
+                    movies
+                    or
+                    access their profile page, where they can modify or delete account.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- my flyx angular end -->
+
+          <!-- pokedex -->
+          <div class="card mb-3">
+            <div class="row g-0">
+
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">Pokedex App
+                    <a href="https://ismauy.github.io/simple-js-app/" target="_blank"><img src="img/svg/www.svg"
+                        alt="live" style="margin-left: 10%;"></a>
+                    <a href="https://github.com/ismauy/simple-js-app" target="_blank"><img src="img/svg/git-repo.svg"
+                        alt="GitHub Ismael ferrazzi" style="margin-left: 2%;"></a>
+
+                  </h4>
+                  <p class="card-text">
+                  <p>This project is to portray a simple application that lists the original 150 Pokémon of the Kanto
+                    region
+                    including their height, types and moves while pulling information from an external API. The web
+                    application
+                    is
+                    created using HTML, CSS and JavaScript. Data is loaded from an external API and allows the user to
+                    view
+                    certain information about a specific Pokémon.</p>
+
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="img/work/pokedex1.png" class="img-fluid " alt="...">
+
+              </div>
+            </div>
+          </div>
+          <!-- pokedex end -->
+
+          <!-- to do list -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/work/to-do.png" class="img-fluid " alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h4 class="card-title" style="margin-left: 3%;">to-do list
+                    <a href="https://ismauy.github.io/to-do-app/" target="_blank"><img src="img/svg/www.svg" alt="live"
+                        style="margin-left: 10%;"></a>
+                    <a href="https://github.com/ismauy/to-do-app" target="_blank"><img src="img/svg/git-repo.svg"
+                        alt="GitHub Ismael ferrazzi" style="margin-left: 2%;"></a>
+                  </h4>
+                  <p class="card-text">
+                  <p>A jQuery mini-project in where the user can add a new item to a list of items, can cross out an
+                    item
+                    from
+                    the
+                    list
+                    of items, can delete an item from the list of items and can change the order of items in the list of
+                    items.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- to do list end -->
+
+    </section>
+
+    <section id="tech" class="tech-section">
+      <div class="tech-grid skills-tools">
+        <div>
+          <div class="container-icons">
+            <div class="icon-container">
+              <i class="fab fa-html5" aria-hidden="true"></i>
+              <p>HTML</p>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-css3-alt" aria-hidden="true"></i>
+              <p>CSS</p>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-js" aria-hidden="true"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-react" aria-hidden="true"></i>
+              <p>React</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-angularjs-plain" aria-hidden="true"></i>
+              <p>Angular</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-nodejs-plain" aria-hidden="true"></i>
+              <p>Node.js</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-express-original" aria-hidden="true"></i>
+              <p>Express</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-mongodb-plain" aria-hidden="true"></i>
+              <p>MongoDB</p>
+            </div>
+            <div class="icon-container">
+              <img src="img/api.png" alt="API icon" aria-hidden="true">
+              <p>REST APIs</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-vscode-plain"></i>
+              <p>VS Code</p>
+            </div>
+            <div class="icon-container">
+              <img src="img/responsive-designs.png" alt="Command Line Icon" aria-hidden="true">
+              <p>Responsive Designs</p>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-vertical">
+          <p><span style="color:#88c0d0;font-weight:bold;font-size: 50px;">tech</span><span
+              style="color:#2e3440;font-weight:bold;font-size: 50px;">.</span></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-form">
+        <div class="container-lg ">
+          <p>Do you have any questions? <b>Contact me</b>
+          </p>
+          <div class="row mb-5 mt-5">
+            <div class="col-sm-10 col-md-6 contactform">
+              <form action="https://app.99inbound.com/api/e/KxeAIwhb" method="POST" target="_self">
+                <div class="row mb-2">
+                  <div class="col-sm-10 col-md-10 pb-2">
+                    <label for="name">Name<span style="color:red">*</span></label>
+                    <input type="text" class="form-control" placeholder="Please enter your Name" aria-label="Name"
+                      name="name" required />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-10">
+                    <label for="mail">Mail<span style="color:red">*</span></label>
+                    <input type="email" class="form-control" placeholder="example@mail.com" name="email" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10">
+                    <label for="message">Message<span style="color:red">*</span></label>
+                    <textarea class="form-control" placeholder="Message ..." rows="5" name="message"
+                      required></textarea>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="my-contact">
+                  <p style="text-align: center;"><button type="submit" class="button about__cv"
+                      target="_blank">Submit</button></p>
+
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 pt-5">
+            <div class="my-contact">
+              <span style="color:#2e3440;font-weight:bold;font-size: 50px;">contact</span><span
+                style="color:#88c0d0;font-weight:bold;font-size: 50px;">.</span>
+              <p>
+              <h4><a class="contact-link" href="https://ismauy.de/">ismauy.de</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <nav class="page-footer">
+    <br>
+    <div class="social-media">
+      <a href="https://github.com/ismauy" target="_blank" style="text-decoration: none;">
+        <img src="img/svg/cir-git.svg" alt="GitHub Ismael ferrazzi">
+      </a>
+      <a href="https://www.linkedin.com/in/ismael-ferrazzi-tassisto-386a0880/" target="_blank"
+        style="text-decoration: none;">
+        <img src="img/svg/cir-linkedin.svg" alt="LinkedIn Ismael ferrazzi">
+      </a>
+      <a href="https://www.xing.com/profile/Ismael_Ferrazzi/cv" target="_blank" style="text-decoration: none;">
+        <img src="img/svg/cir-xing.svg" alt="Xing Ismael ferrazzi">
+      </a>
+      <a href="mailto:isma.ferrazzi@gmail.com">
+
+        <img src="img/svg/cir-mail.svg" alt="isma.ferrazzi@gmail.com">
+      </a>
+    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d15cf6cad0.js" crossorigin="anonymous"></script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="/js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
